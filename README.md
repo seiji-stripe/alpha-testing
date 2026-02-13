@@ -5,7 +5,7 @@ Repository for writing **custom functions** for Stripe’s soon-to-be-released b
 ## Clone and setup
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/seiji-stripe/alpha-testing.git
 cd alpha-testing
 npm install
 ```
