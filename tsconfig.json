@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "paths": {
+      "@stripe/scripts": ["./node_modules/@stripe/scripts/src/index.ts"],
+      "@stripe/scripts/*": ["./node_modules/@stripe/scripts/src/*"],
+      "@stripe/scripts/discount_calculation": ["./node_modules/@stripe/scripts/src/discount_calculation/index.ts"],
+      "@stripe/scripts/prorations": ["./node_modules/@stripe/scripts/src/prorations/index.ts"],
+      "@stripe/scripts/bill_routing": ["./node_modules/@stripe/scripts/src/bill_routing/index.ts"],
+      "@stripe/scripts/customer_balance_application": ["./node_modules/@stripe/scripts/src/customer_balance_application/index.ts"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
